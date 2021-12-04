@@ -7,7 +7,7 @@
 }
 
 .meal-form button {
-    @apply px-5 py-1 text-lg bg-red-300 rounded-full;
+    @apply w-24 px-5 py-1 text-lg bg-red-300 rounded-full;
 }
 
 .meal-form button:hover {

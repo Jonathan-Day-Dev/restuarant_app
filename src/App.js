@@ -4,6 +4,7 @@
  * Fix overflow-x so that it works without being hidden
  * Set up base Tailwind to keep color scheme correct
  * Responsiveness
+ * Add categories table to database
  * 
  */
 
