@@ -1,7 +1,7 @@
 import styles from "./AvailableMeals.module.css";
 
 import Card from "../UI/Card";
-import Meal from "./Meal";
+import Meal from "./MealItems/Meal";
 
 const DUMMY_DATA = [
   {

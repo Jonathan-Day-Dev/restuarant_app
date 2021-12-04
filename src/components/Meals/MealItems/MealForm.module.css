@@ -1,0 +1,15 @@
+.meal-form {
+    @apply flex items-center justify-evenly;
+}
+
+.meal-form input {
+    @apply h-5 mx-2;
+}
+
+.meal-form button {
+    @apply px-5 py-1 text-lg bg-red-300 rounded-full;
+}
+
+.meal-form button:hover {
+    @apply text-gray-100 bg-red-900;
+}

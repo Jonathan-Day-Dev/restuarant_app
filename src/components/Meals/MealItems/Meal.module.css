@@ -6,6 +6,10 @@
     @apply bg-gray-400 cursor-pointer;
 }
 
+.info__card {
+    @apply flex;
+}
+
 .info__title {
     @apply text-xl font-semibold;
 }
