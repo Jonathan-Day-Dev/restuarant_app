@@ -1,3 +1,11 @@
-.meals {
+/* .meals {
     @apply p-5 bg-gray-300 border-2 border-gray-700 border-solid shadow-lg opacity-70 rounded-xl;
+} */
+
+.meals {
+    @apply bg-red-700 opacity-80;
+}
+
+.meals__list-item {
+    @apply bg-gray-200 opacity-90;
 }

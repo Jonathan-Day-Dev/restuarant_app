@@ -1,0 +1,3 @@
+.card {
+    @apply p-4 mx-40 my-2 border-2 border-solid shadow-lg opacity-80 rounded-xl;
+}
