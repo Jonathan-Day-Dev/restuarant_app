@@ -1,0 +1,3 @@
+.meals {
+    @apply flex flex-col items-center justify-between -m-48;
+}
