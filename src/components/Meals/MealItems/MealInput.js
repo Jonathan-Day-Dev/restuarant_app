@@ -1,13 +1,16 @@
 import styles from "./MealInput.module.css";
 
 const MealInput = (props) => {
-  return <input 
-    className={styles.input} 
-    type="number" 
-    step={props.step} 
-    value={props.value} 
-    onChange={props.onChange}
-/>;
+  return (
+    <div>
+      <input
+        {...props.input}
+        className={styles.input}
+        value={props.value}
+        onChange={props.onChange}
+      />
+    </div>
+  );
 };
 
 export default MealInput;

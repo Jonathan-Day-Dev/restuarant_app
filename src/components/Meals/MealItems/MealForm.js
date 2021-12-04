@@ -21,7 +21,12 @@ const MealForm = props => {
     return (
         <form className={styles['meal-form']} onSubmit={submitHandler}>
             <MealInput 
-                step="1"
+                input={{
+                    id: `amount_${props.id}`,
+                    type: "number",
+                    min: "0",
+                    step: "1",
+                }}
                 value={quantity}
                 onChange={quantityHandler}
             />

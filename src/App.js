@@ -5,6 +5,7 @@
  * Set up base Tailwind to keep color scheme correct
  * Responsiveness
  * Add categories table to database
+ * Get quantity changes higher in the tree
  * 
  */
 
@@ -15,6 +16,7 @@ import Meals from "./components/Meals/Meals";
 
 
 function App() {
+
   return (
     <Fragment>
       <Header />
