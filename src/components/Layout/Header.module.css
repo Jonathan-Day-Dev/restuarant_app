@@ -1,0 +1,7 @@
+.image {
+    @apply z-0 w-full overflow-hidden h-96;
+}
+
+.image img {
+    @apply w-full;
+}

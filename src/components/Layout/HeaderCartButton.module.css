@@ -1,0 +1,47 @@
+.btn {
+  @apply flex items-center justify-around px-4 py-1 font-bold text-gray-100 bg-red-900 border-none cursor-pointer rounded-3xl;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #2c0d00;
+}
+
+.icon {
+  @apply w-5 h-5 mr-2;
+}
+
+.count {
+  background-color: #b94517;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #92320c;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
