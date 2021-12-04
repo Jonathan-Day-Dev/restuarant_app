@@ -1,0 +1,33 @@
+.cart-items {
+    @apply p-0 m-0 overflow-auto list-none max-h-80;
+}
+
+.total {
+    @apply flex items-center justify-between my-4 text-2xl font-bold;
+}
+
+.actions {
+    @apply text-right;
+}
+
+.actions button {
+    @apply px-8 py-2 ml-4 bg-transparent border-2 border-red-900 border-solid rounded-full cursor-pointer;
+}
+
+.actions button:hover,
+.actions button:active {
+    @apply text-gray-300 bg-red-700 border-red-700;
+}
+
+.btn--alt {
+    @apply text-red-900;
+}
+
+.actions .btn {
+    @apply text-green-700 border-green-700;
+}
+
+.actions .btn:hover,
+.actions .btn:active {
+    @apply text-gray-300 bg-green-700 border-gray-300;
+}

@@ -8,7 +8,10 @@ import HeaderBody from './HeaderBody';
 const Header = props => {
     return (
         <Fragment>
-            <HeaderBody />
+            <HeaderBody 
+                onShowCart={props.onShowCart}
+                onHideCart={props.onHideCart}
+            />
             <div className={styles.image}>
                 <img src={cafeImage} alt="Cafe dinning room" />
             </div>
