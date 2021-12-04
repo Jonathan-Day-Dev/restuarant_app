@@ -1,9 +1,11 @@
+import { forwardRef } from "react";
 import styles from "./MealInput.module.css";
 
-const MealInput = (props) => {
+const MealInput = forwardRef((props, ref) => {
   return (
     <div>
       <input
+        ref={ref}
         {...props.input}
         className={styles.input}
         value={props.value}
@@ -11,6 +13,6 @@ const MealInput = (props) => {
       />
     </div>
   );
-};
+});
 
 export default MealInput;

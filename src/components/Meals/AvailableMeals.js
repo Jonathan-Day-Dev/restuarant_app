@@ -10,6 +10,7 @@ const DUMMY_DATA = [
     description:
       "A 1/2 lb beef patty on a jalepeno sourdough bun. Comes with grilled jalepenos and onions, lettuce, tomato, bacon and mayo",
     price: 12.99,
+    amount: 0
   },
   {
     id: "m2",
@@ -17,6 +18,7 @@ const DUMMY_DATA = [
     description:
       "Comes with our house-cooked roast beef, two sides of your choice, a roll, dessert and a drink",
     price: 14.59,
+    amount: 0
   },
   {
     id: "m3",
@@ -24,6 +26,7 @@ const DUMMY_DATA = [
     description:
       "Our Lemon Chicken marinates for no less than three days before we slice it up and place it on a bed of lettuce with tomatoes, olives, onions and your choice of dressing",
     price: 9.99,
+    amount: 0
   },
   {
     id: "m4",
@@ -31,6 +34,7 @@ const DUMMY_DATA = [
     description:
       "Ham, turkey, lettuce, tomatoes and our house-made cranberry sauce on three slices of sourdough bread",
     price: 9.59,
+    amount: 0
   },
 ];
 
@@ -43,6 +47,7 @@ const AvailableMeals = props => {
       name={meal.name}
       description={meal.description}
       price={meal.price}
+      amount={meal.amount}
     >
       {meal.name}
     </Meal>
