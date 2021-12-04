@@ -1,0 +1,11 @@
+.cart-item {
+    @apply flex items-center justify-between;
+}
+
+.name {
+    @apply text-2xl font-semibold;
+}
+
+.main {
+    @apply flex flex-col items-center justify-evenly;
+}
