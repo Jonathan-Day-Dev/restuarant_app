@@ -7,33 +7,39 @@ import CartItem from "./CartItem";
 
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
-
   const total = `$${cartCtx.totalAmt.toFixed(2)}`;
 
   const addItemHandler = () => {
-    console.log('Add')
+    console.log('Add');
   }
 
   const removeItemHandler = () => {
     console.log('Remove')
   }
 
+  // const numItems = itemId => {
+  //   const listLength = cartCtx.items.filter(item => item.id === itemId).length;
+  //   console.log(listLength);
+  //   return listLength;
+  // }
+
   const cartItems = (
     <ul className={styles["cart-items"]}>
       {cartCtx.items.map((item) => (
-        // <li key={item.id}>{item.name} ${item.price}</li>
         <CartItem 
-          key={item.id} 
+          key={item.id}
+          id={item.id}
           name={item.name}
-          description={item.description}
           price={item.price} 
           amount={item.amount}
-          onAdd={addItemHandler}
-          onRemove={removeItemHandler}
+          onAdd={addItemHandler.bind(null, item)}
+          onRemove={removeItemHandler.bind(null, item.id)}
         />
       ))}
     </ul>
   );
+
+  
 
   return (
     <Modal onClose={props.onHideCart}>

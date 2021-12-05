@@ -38,7 +38,7 @@ const DUMMY_DATA = [
   },
 ];
 
-const AvailableMeals = props => {
+const AvailableMeals = () => {
   const mealsList = DUMMY_DATA.map((meal) => (
     <Meal 
       className={styles["meals__list-item"]} 

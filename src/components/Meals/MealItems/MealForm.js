@@ -1,17 +1,11 @@
-import styles from './MealForm.module.css';
+import styles from "./MealForm.module.css";
 
-const MealForm = props => {
-    const quantity = props.quantity;
-    
-    const submitHandler = e => {
-        e.preventDefault();
-    }
-
-    return (
-        <form className={styles['meal-form']} onSubmit={submitHandler}>
-            <button onClick={props.onAddToCart}>{props.quantity > 0 ? `${quantity} Added` : 'Add'}</button>
-        </form>
-    )
-}
+const MealForm = (props) => {
+  return (
+      <button onClick={props.onAddToCart} className={styles['meal-form']}>
+        {props.amount > 0 ? `${props.amount} Added` : "Add"}
+      </button>
+  );
+};
 
 export default MealForm;

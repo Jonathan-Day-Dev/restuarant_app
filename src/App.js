@@ -5,7 +5,6 @@
  * Set up base Tailwind to keep color scheme correct
  * Responsiveness
  * Add categories table to database
- * Input isn't updating cart (may get rid of input and just keep the button to add items)
  * When adding multiple items, add to amount instead of duplicating items CartItem.js
  *
  */
