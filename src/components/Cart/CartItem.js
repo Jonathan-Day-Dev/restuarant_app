@@ -2,7 +2,6 @@ import styles from "./CartItem.module.css";
 // id, name, description, price, amount
 const CartItem = (props) => {
     const price = `$${props.price.toFixed(2)}`
-    console.log(price)
   return (
     <li>
       <div className={styles['cart-item']}>
