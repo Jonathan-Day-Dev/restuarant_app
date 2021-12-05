@@ -5,7 +5,7 @@
  * Set up base Tailwind to keep color scheme correct
  * Responsiveness
  * Add categories table to database
- * When adding multiple items, add to amount instead of duplicating items CartItem.js
+ * Update the number on the Add button
  *
  */
 import { useState } from 'react';

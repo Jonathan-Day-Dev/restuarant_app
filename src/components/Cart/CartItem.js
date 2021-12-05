@@ -1,16 +1,13 @@
 import styles from "./CartItem.module.css";
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 
 import CartContext from '../../store/cart-context';
 
 const CartItem = (props) => {
   const cartCtx = useContext(CartContext);
   const selectedItem = cartCtx.items.find(item => item.id === props.id);
-  const [amount, setAmount] = useState(props.amount);
+  console.log(selectedItem)
   const price = `$${props.price.toFixed(2)}`;
-  const addToCartHandler = () => {
-    setAmount(amount + 1);
-  }
 
   return (
     <li>
@@ -23,7 +20,7 @@ const CartItem = (props) => {
       </div>
       <div>
         <button onClick={props.onRemove}>-</button>
-        <button onClick={addToCartHandler}>+</button>
+        <button onClick={props.onAdd}>+</button>
       </div>
     </li>
   );

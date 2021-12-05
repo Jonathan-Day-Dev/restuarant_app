@@ -9,19 +9,13 @@ const Cart = (props) => {
   const cartCtx = useContext(CartContext);
   const total = `$${cartCtx.totalAmt.toFixed(2)}`;
 
-  const addItemHandler = () => {
-    console.log('Add');
+  const addItemHandler = item => {
+    cartCtx.addItem(item)
   }
 
-  const removeItemHandler = () => {
-    console.log('Remove')
+  const removeItemHandler = id => {
+    cartCtx.removeItem(id)
   }
-
-  // const numItems = itemId => {
-  //   const listLength = cartCtx.items.filter(item => item.id === itemId).length;
-  //   console.log(listLength);
-  //   return listLength;
-  // }
 
   const cartItems = (
     <ul className={styles["cart-items"]}>
@@ -46,7 +40,7 @@ const Cart = (props) => {
       {cartItems}
       <div className={styles.total}>
         <span>Total Amount</span>
-        <span>{total}</span>
+        <span>{total.replace('-0.00', '0.00')}</span>
       </div>
       <div className={styles.actions}>
         <button className={styles["btn--alt"]} onClick={props.onHideCart}>
