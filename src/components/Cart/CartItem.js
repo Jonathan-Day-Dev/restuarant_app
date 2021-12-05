@@ -18,7 +18,7 @@ const CartItem = (props) => {
         <h2 className={styles.name}>{props.name}</h2>
         <div className={styles.main}>
           <span>{price}</span>
-          <span>{`Amt: ${selectedItem.amount}`}</span>
+          <span>{`Amt: ${selectedItem.amount + 1}`}</span>
         </div>
       </div>
       <div>

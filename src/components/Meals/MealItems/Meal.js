@@ -1,5 +1,5 @@
 import styles from "./Meal.module.css";
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 import CartContext from "../../../store/cart-context";
 
@@ -8,18 +8,26 @@ import MealForm from "./MealForm";
 
 const Meal = (props) => {
   // const [quantity, setQuantity] = useState(0);
+  const [amt, setAmt] = useState(props.amount);
   const cartContext = useContext(CartContext);
   const price = props.price.toFixed(2);
 
+  const addToAmount = () => {
+    setAmt(amt + 1);
+  }
+
   const addToCartHandler = () => {
+    addToAmount()
     cartContext.addItem({
       id: props.id,
       name: props.name,
-      amount: props.amount + 1,
+      amount: amt,
       price: props.price
     })
     // setQuantity(cartContext.items.filter(item => item.name === props.name).length + 1);
   }
+
+  
 
   return (
     <Card className={styles.info__card}>
@@ -30,7 +38,7 @@ const Meal = (props) => {
       </section>
       <MealForm 
         id={props.id}
-        amount={props.amount}
+        amount={amt}
         onAddToCart={addToCartHandler}
       />
     </Card>

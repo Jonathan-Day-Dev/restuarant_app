@@ -1,5 +1,5 @@
 .meal-form {
-    @apply w-1/12 h-10 px-5 py-1 ml-10 text-lg bg-red-300 rounded-full;
+    @apply w-2/12 h-10 px-5 py-1 ml-10 text-lg bg-red-300 rounded-full;
 }
 
 .meal-form:hover {
