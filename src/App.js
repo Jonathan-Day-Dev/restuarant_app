@@ -6,6 +6,8 @@
  * Responsiveness
  * Add categories table to database
  * Update the number on the Add button
+ * Manage item amount with useContext hook
+ * Connect backend so app is using database CRUD
  *
  */
 import { useState } from 'react';
