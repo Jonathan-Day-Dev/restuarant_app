@@ -36,6 +36,13 @@ const DUMMY_DATA = [
     price: 9.59,
     amount: 0
   },
+  {
+    id: "m5",
+    name: "Tortilla Soup",
+    description: "Soup made with chicken and veggies, topped with fried tortilla strips",
+    price: 8.99,
+    amount: 0
+  }
 ];
 
 const AvailableMeals = () => {
